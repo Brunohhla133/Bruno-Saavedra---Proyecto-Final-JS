@@ -1,0 +1,289 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap");
+/*Media queries*/
+/*Backgrouds*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  width: 100%;
+  background-color: hsla(36, 3%, 30%, 0.959);
+  z-index: 1;
+  position: fixed;
+}
+.navbar .nav-link {
+  font-size: 15px;
+  color: white;
+  text-shadow: 0 0 5px #e68b14;
+  margin: 20px;
+}
+.navbar .nav-link:hover {
+  color: #FFD194;
+}
+.navbar .navbar-brand {
+  padding: 10px;
+  border: 5px solid #FFBD59;
+  background-color: hsla(36, 3%, 30%, 0.911);
+}
+.navbar .navbar-brand, .navbar .a {
+  font-size: 30px;
+  text-shadow: 0 0 5px #e68b14;
+  color: #FFBD59;
+}
+.navbar .navbar-brand:hover {
+  color: #FFBD59;
+}
+.navbar .container-fluid button {
+  color: #e68b14;
+  background-color: #FFBD59;
+  border: none;
+}
+
+.banner {
+  width: 100%;
+  background-color: black;
+  background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(13\).png);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  padding-top: 40px;
+}
+.banner img {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* h1 */
+.titulo h1 {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  color: #FFBD59;
+  padding: 10px;
+  margin-top: 20px;
+  text-shadow: 0 0 10px #e68b14;
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  background-color: hsla(36, 3%, 30%, 0.911);
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+footer p{
+  color: aliceblue;
+  margin-bottom: 20px;
+}
+
+.redes a {
+  color: #FFD194;
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (width < 600px) {
+  footer {
+    width: 100%;
+  }
+  h2 {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .p-5 img {
+    width: 100%;
+  }
+  .item {
+    width: 90%;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (width > 1200px) {
+  footer {
+    width: 100%;
+  }
+}
+/*Mixin jumbotron*/
+.jumbotron-1 {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(23\).png);
+}
+
+.jumbotron-2 {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(3\).png);
+}
+
+.jumbotron-3 {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../imagenes/tienda-ropa/Diseño\ sin\ título\ \(18\).png);
+}
+
+.jumbotron-4 {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  background-image: url(../imagenes/tienda-ropa/Contacto.png);
+}
+.cart{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding: 5px;
+    width: 3rem; 
+    height: 3rem;
+    gap: 30px;
+}
+.stroke{
+    color: #e68b14;
+}
+.cart span{
+    padding: 20px;
+    width: 30px;
+    display: block;
+    margin-left: 30px;
+    padding: 2px;
+    color: #FFBD59;
+    border: 2px solid;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+span, .cartCount{
+    text-align: center;
+}
+
+.item{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 20rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+p{
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+    padding: 3%;
+    border-radius: 1px
+}
+h3{
+    background-color: #FFD194;
+        font-size: 30px;
+        width: 100%;
+        padding: 15px;
+        margin: 20px;
+        text-align: center;
+        display: block;
+        margin: 0 auto; 
+}
+
+img{
+    width: 100%;
+    transition: all .5s;
+} 
+
+.conteiner-items:hover{
+    box-shadow: 1px 1px 10px 1px #c97900;
+}
+.item:hover{
+    box-shadow: 1px 1px 10px 1px #cf9d52 ;
+}
+.item:hover img{
+    transform: scale(1.1);
+}
+.container, button{
+    background-color: hsl(30, 4%, 29%);
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    transition: all .5s;
+    border: 3px solid #c97900;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+button:hover{
+    transform: scale(1.2);
+}
+
+
+.carritoButton{
+    font-size: 20px;
+    width: 20rem;
+    height: 5rem;
+    margin-bottom: 20px;
+    background-color: #cf9d52;
+    border: 5px solid;
+    border-color: bisque;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+} 
+
+.contenedorD h3{
+    background-color: antiquewhite;
+    border-radius: 0;
+}
+.contenedorD p{
+    background-color: antiquewhite;
+}
+.contenedorT h3{
+    border-radius: 0;
+}
+.botonConfirmar{
+    background-color: #cf9d52;
+}
+
+i{
+  color: #cf9d52;
+}
+h4{
+  font-size: 30px;
+  text-align: center;
+  color: aliceblue;
+  padding: 3%;
+  border-radius: 1px
+}

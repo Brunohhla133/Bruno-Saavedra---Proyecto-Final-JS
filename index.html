@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunter Clothes Store</title>
+    <meta name="description" content="Conseguí las mejores prendas al mejor precio del mercado. COMPRA YA. ENVÍO GRATIS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Bootstrap Start-->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Bootstrap End -->
+    <link rel="shortcut icon" href="./imagenes/Icono-logo/HC LOGO PAG.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- NavBar -->
+<nav class="navbar navbar-expand-lg  navbar-dark">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">HUNTER CLOTHES</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="./index.html">INICIO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./pages/indumentaria.html">INDUMENTARIA</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./pages/clientes.html">CLIENTES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+        </li>
+        <div class="cart">
+            <i id= cartViewC class="fa-solid fa-cart-shopping fa-2xl"></i>
+            <span id="cartCount">0</span>
+        </div>
+        </ul>
+    </div>
+    </div>
+</nav>
+<div class="banner">
+    <div class="sale">
+        <img src="./imagenes/indumentaria/SÚPER SALE 3.0.png" alt="Súper Oferta">
+    </div>
+</div>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+<!-- Indicators/dots -->
+<div class="carousel-indicators">
+    <button
+    type="button"
+    data-bs-target="#demo"
+    data-bs-slide-to="0"
+    class="active"
+    ></button>
+    <button
+    type="button"
+    data-bs-target="#demo"
+    data-bs-slide-to="1"
+    ></button>
+    <button
+    type="button"
+    data-bs-target="#demo"
+    data-bs-slide-to="2"
+    ></button>
+</div>
+<!-- The slideshow/carousel -->
+<div class="carousel-inner">
+    <div class="carousel-item active">
+    <img
+        src="./imagenes/indumentaria/NEW IN.png"
+        alt="Nuevos Productos"
+        class="d-block w-100"
+    />
+    </div>
+    <div class="carousel-item">
+    <img
+        src="./imagenes/indumentaria/SALE TRAJES.png"
+        alt="Oferta en Trajes"
+        class="d-block w-100"
+    />
+    </div>
+    <div class="carousel-item">
+    <img
+        src="./imagenes/indumentaria/SALE CAMISAS.png"
+        alt="Oferta en Camisas"
+        class="d-block w-100"
+    />
+    </div>
+</div>
+<!-- Left and right controls/icons -->
+<button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#demo"
+    data-bs-slide="prev"
+>
+    <span class="carousel-control-prev-icon"></span>
+</button>
+<button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#demo"
+    data-bs-slide="next"
+>
+    <span class="carousel-control-next-icon"></span>
+</button>
+</div>
+<div id= "container"></div>
+<main>
+    <div id="product-container" class="productContainer">
+    </div>
+</main>
+        <!-- Footer Start -->
+    <footer>
+        <p> © Hunter Clothes Store 2024 / Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+        </div>
+        </footer>
+        <!-- Footer End -->
+        <!-- JS -->
+        <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"
+        ></script>
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"
+        ></script>
+<!--     <script src="js/indumentaria.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>
